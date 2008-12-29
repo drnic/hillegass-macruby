@@ -17,4 +17,9 @@ class Foo
 	def generate(sender)
 		textField.StringValue = (rand(100) + 1)
 	end
+	
+	def awakeFromNib
+		textField.ObjectValue = NSCalendarDate.calendarDate
+	end
+	
 end
