@@ -72,7 +72,7 @@
 											<object class="NSMutableArray" key="NSTableColumns">
 												<bool key="EncodedWithXMLCoder">YES</bool>
 												<object class="NSTableColumn" id="149810647">
-													<double key="NSWidth">1.010000e+02</double>
+													<double key="NSWidth">1.820000e+02</double>
 													<double key="NSMinWidth">4.000000e+01</double>
 													<double key="NSMaxWidth">1.000000e+03</double>
 													<object class="NSTableHeaderCell" key="NSHeaderCell">
@@ -130,7 +130,7 @@
 													<reference key="NSTableView" ref="473069226"/>
 												</object>
 												<object class="NSTableColumn" id="757624464">
-													<double key="NSWidth">2.930000e+02</double>
+													<double key="NSWidth">2.120000e+02</double>
 													<double key="NSMinWidth">4.000000e+01</double>
 													<double key="NSMaxWidth">1.000000e+03</double>
 													<object class="NSTableHeaderCell" key="NSHeaderCell">
@@ -263,7 +263,7 @@
 									<int key="NSsFlags">1</int>
 									<reference key="NSTarget" ref="364211774"/>
 									<string key="NSAction">_doScroller:</string>
-									<double key="NSPercent">5.714286e-01</double>
+									<double key="NSPercent">9.900990e-01</double>
 								</object>
 								<object class="NSClipView" id="190440030">
 									<reference key="NSNextResponder" ref="364211774"/>
@@ -350,7 +350,6 @@
 				<bool key="NSEditable">YES</bool>
 				<object class="_NSManagedProxy" key="_NSManagedProxy"/>
 				<bool key="NSAvoidsEmptySelection">YES</bool>
-				<bool key="NSPreservesSelection">YES</bool>
 				<bool key="NSSelectsInsertedObjects">YES</bool>
 				<bool key="NSFilterRestrictsInsertion">YES</bool>
 				<bool key="NSClearsFilterPredicateOnInsertion">YES</bool>
@@ -377,26 +376,6 @@
 						</object>
 					</object>
 					<int key="connectionID">20</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">displayPatternValue1: arrangedObjects.personName</string>
-						<reference key="source" ref="149810647"/>
-						<reference key="destination" ref="604286176"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="149810647"/>
-							<reference key="NSDestination" ref="604286176"/>
-							<string key="NSLabel">displayPatternValue1: arrangedObjects.personName</string>
-							<string key="NSBinding">displayPatternValue1</string>
-							<string key="NSKeyPath">arrangedObjects.personName</string>
-							<object class="NSDictionary" key="NSOptions">
-								<string key="NS.key.0">NSDisplayPattern</string>
-								<string key="NS.object.0">%{value1}@</string>
-							</object>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">22</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
@@ -452,6 +431,22 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: arrangedObjects.personName</string>
+						<reference key="source" ref="149810647"/>
+						<reference key="destination" ref="604286176"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="149810647"/>
+							<reference key="NSDestination" ref="604286176"/>
+							<string key="NSLabel">value: arrangedObjects.personName</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">arrangedObjects.personName</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">38</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
 						<string key="label">value: arrangedObjects.expectedRaise</string>
 						<reference key="source" ref="757624464"/>
 						<reference key="destination" ref="604286176"/>
@@ -461,10 +456,30 @@
 							<string key="NSLabel">value: arrangedObjects.expectedRaise</string>
 							<string key="NSBinding">value</string>
 							<string key="NSKeyPath">arrangedObjects.expectedRaise</string>
+							<object class="NSDictionary" key="NSOptions">
+								<string key="NS.key.0">NSValidatesImmediately</string>
+								<integer value="1" key="NS.object.0"/>
+							</object>
 							<int key="NSNibBindingConnectorVersion">2</int>
 						</object>
 					</object>
-					<int key="connectionID">34</int>
+					<int key="connectionID">39</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">enabled: canRemove</string>
+						<reference key="source" ref="45256985"/>
+						<reference key="destination" ref="604286176"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="45256985"/>
+							<reference key="NSDestination" ref="604286176"/>
+							<string key="NSLabel">enabled: canRemove</string>
+							<string key="NSBinding">enabled</string>
+							<string key="NSKeyPath">canRemove</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">41</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -666,10 +681,10 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilderKit</string>
 					<string>com.apple.InterfaceBuilderKit</string>
-					<string>{{339, 372}, {609, 373}}</string>
+					<string>{{518, 372}, {609, 373}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="0"/>
-					<string>{{339, 372}, {609, 373}}</string>
+					<string>{{518, 372}, {609, 373}}</string>
 					<reference ref="9"/>
 					<string>{196, 240}</string>
 					<string>{{202, 428}, {480, 270}}</string>
@@ -711,7 +726,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">34</int>
+			<int key="maxID">41</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
