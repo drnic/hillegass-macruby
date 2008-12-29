@@ -9,7 +9,7 @@
 class CounterController
 	attr_accessor :labelField, :textField
 
-	def awakenFromNib
+	def awakeFromNib
 		labelField.stringValue = "???"
 		textField.stringValue  = ""
 	end
