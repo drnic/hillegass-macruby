@@ -21,7 +21,7 @@ class SpeechController
 		stopButton.enabled = false
 		defaultVoice = NSSpeechSynthesizer.defaultVoice
 		defaultRow = voiceList.indexOfObject(defaultVoice)
-		voicesTableView.selectRow(defaultRow, byExtendingSelection: false)
+		voicesTableView.selectRowIndexes(NSIndexSet.indexSetWithIndex(defaultRow), byExtendingSelection: false)
 		voicesTableView.scrollRowToVisible(defaultRow)
 	end
 
@@ -53,7 +53,8 @@ class SpeechController
 	
 	def tableView(aTableView, objectValueForTableColumn: aTableColumn, row: rowIndex)
 		voice = voiceList.objectAtIndex(rowIndex)
-		NSSpeechSynthesizer.attributesForVoice(voice).objectForKey:"VoiceName"
+		NSSpeechSynthesizer.attributesForVoice(voice)["VoiceName"]
+		# NSSpeechSynthesizer.attributesForVoice(voice).objectForKey:"VoiceName"
 	end
 	
 	def tableViewSelectionDidChange(aNotification)
