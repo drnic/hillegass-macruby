@@ -18,6 +18,33 @@ class StaffList < NSDocument
     @employees = newEmployees
   end
   
+  # for reading
+
+  def countOfEmployees
+     @employees.length
+  end
+
+  def objectInEmployeesAtIndex(i)
+     @employees[i]
+  end
+
+  # for writing
+
+  def insertObject(object, inEmployeesAtIndex:i)
+     @employees[i,0] = object
+  end
+
+  def removeObjectFromEmployeesAtIndex(i)
+     @employees.delete_at(i)
+  end
+
+  # you can also implement:
+
+  def replaceObjectInEmployeesAtIndex(i, withObject:object)
+     @employees[i, 1] = object
+  end
+  
+  
   def windowNibName
     # Implement this to return a nib to load OR implement
     # -makeWindowControllers to manually create your controllers.
